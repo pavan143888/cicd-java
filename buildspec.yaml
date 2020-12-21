@@ -18,6 +18,7 @@ phases:
     commands:
       - cd HelloWorldFunction
       - mvn install
+      - cd ..
   post_build:
     commands:
       - ./cloudformation/buildspec_postbuild.sh
