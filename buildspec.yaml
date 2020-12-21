@@ -5,7 +5,9 @@ phases:
     runtime-versions:
       java: openjdk8
     commands:
-      - For testing purpose i didn't gave commands
+      - chmod +x cloudformation/buildspec_postbuild.sh
+      - chmod +x bin/provision.sh
+      - chmod +x bin/deploy.sh
   build:
     commands:
       - mvn clean install
