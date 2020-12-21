@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto8
+    commands:
+      - For testing purpose i didn't gave commands
+  build:
+    commands:
+      - mvn clean install
+  post_build:
+    commands:
+      - ./cloudformation/buildspec_postbuild.sh
