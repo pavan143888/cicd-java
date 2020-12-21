@@ -16,6 +16,7 @@ phases:
       - mvn -version
   build:
     commands:
+      - cd HelloWorldFunction
       - mvn install
   post_build:
     commands:
