@@ -39,7 +39,7 @@ Resources:
       FunctionName: !Sub cicd-pipeline-basic-java-function
       Handler: helloworld.App::handleRequest
       Runtime: java8
-      CodeUri: ../HelloWorldFunction
+      CodeUri: ../HelloWorldFunction/target
       MemorySize: 192
       Timeout: 30
       Policies:

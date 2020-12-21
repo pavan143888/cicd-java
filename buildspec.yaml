@@ -16,7 +16,7 @@ phases:
       - mvn -version
   build:
     commands:
-      - mvn clean install
+      - mvn install
   post_build:
     commands:
       - ./cloudformation/buildspec_postbuild.sh
